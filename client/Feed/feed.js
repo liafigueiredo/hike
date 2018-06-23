@@ -9,11 +9,9 @@ Template.Feed.events({
     evento.target.texto.value = "";
     }
 });
-
 Template.Feed.helpers({
 	posts: function() {
 		var CollectionPosts = Posts.find().fetch();
 		return CollectionPosts;
 	}
-
 });
